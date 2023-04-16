@@ -1,0 +1,75 @@
+nav, header,
+footer {
+  display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+/*############### Nav bar ############*/
+
+nav {
+    width: 100%;
+    margin: 0;
+  }
+  
+  nav ul {
+    background-color: #D7C9FF;
+    overflow: hidden;
+    margin: 0px;
+    padding: 5px;
+  }
+
+  ul.navbar li {
+    list-style: none;
+    display:inline-block;
+  }
+
+  ul.navbar .navbar-left {
+    text-align: left;
+    float: left;
+    width: 25%;
+  }
+
+  ul.navbar  .navbar-center {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  
+  ul.navbar .navbar-right {
+    text-align: right;
+    float: right;
+    width: 25%;
+  }
+
+  ul.navbar li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    padding: 14px;
+    color: black;
+  }
