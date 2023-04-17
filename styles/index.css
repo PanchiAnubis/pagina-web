@@ -1,6 +1,9 @@
 nav, header,
 footer {
   display: block;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 20px;
 }
 
 body {
@@ -47,10 +50,19 @@ nav {
     display:inline-block;
   }
 
+  ul.navbar .navbar-left img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
   ul.navbar .navbar-left {
+    display: flex;
     text-align: left;
     float: left;
     width: 25%;
+    justify-content: center;
+    align-items: center;
   }
 
   ul.navbar  .navbar-center {
@@ -61,9 +73,10 @@ nav {
   }
   
   ul.navbar .navbar-right {
-    text-align: right;
-    float: right;
+    display: flex;
     width: 25%;
+    justify-content: center;
+    align-items: center;
   }
 
   ul.navbar li a {
@@ -73,3 +86,64 @@ nav {
     padding: 14px;
     color: black;
   }
+
+  ul.navbar li.dropdown {
+    display: none;
+  }
+
+  ul.navbar button{
+    padding: 6px;
+    background-color: #E8E7FD;
+    border-radius: 4px;
+    border: 2px solid #33196B;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  ul.navbar li.b{
+    padding: 10px;
+  }
+
+  ul.navbar li button:hover {
+    background-color: #33196B;
+    color: #fff;
+  }
+
+  /*######### Mobile ###########*/
+/* 
+@media screen and (max-width: 680px) {
+  ul.navbar li:not(:nth-child(1)) {
+    display: none;
+  }
+  
+  ul.navbar li.dropdown {
+    display: block;
+    float: right;
+  }
+  
+  ul.navbar.responsive li.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.navbar.responsive div {
+    display: inline;
+    float: none; 
+    display: block;
+    text-align: center;
+  }
+  
+  ul.navbar.responsive {
+    position: relative;
+  }
+  
+  ul.navbar.responsive li{
+    display: inline;
+    float: none; 
+    display: block;
+    text-align: left;
+  }
+  
+} */

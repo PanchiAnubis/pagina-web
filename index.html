@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <title>Kamra sanación y evolución</title>
   <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
   <nav>
-    <ul class="navbar" id="dropdown">
+    <ul class="navbar" id="dropdownClick">
         <div class="row">
             <div class="navbar-left">
-                <li><img src=""></li>
-                <li><a href="#inicio">Kamra Tarot y Evolición</a></li>
+                <li><img src="resources/kamra.jpeg"></li>
+                <li><a href="#inicio">Kamra Tarot y Evolución</a></li>
             </div>
             <div class="navbar-center">
                 <li><a href="#inicio">Inicio</a></li>
@@ -20,16 +23,26 @@
                 <li><a href="#agenda">Agenda</a></li>
             </div>
             <div class="navbar-right">
-                <li><a href="#register">Registrarse</a></li>
-                <li><a href="#login">Iniciar sesión</a></li>
-                <li class="dropdownIcon">
+                <li class="b"><a href="register.html"><button>Registrarse</button></a></li>
+                <li class="b"><a href="login.html"><button>Iniciar sesión</button></a></li>
+
+                <li class="dropdown">
                     <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
             </div>
         </div>
-        
-        
-        
-        
     </ul>
   </nav>
 </body>
+
+
+<!-- <script>
+  function dropdownMenu() {
+    var x = document.getElementById("dropdownClick");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+      /*cambia navbar a navbar.responsive*/
+    } else {
+      x.className = "navbar";
+    }
+  }
+</script> -->
